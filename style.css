@@ -79,7 +79,7 @@ body {
 }
 
 .card2 {
-   width: 388px;
+   width: 370px;
    background-color: #fff;
    border-radius: 99px;
    box-shadow: 0px 3px 6px #C82D2D5C;
@@ -100,4 +100,10 @@ body {
   .desc {
       text-align: center;
       align-items: center;
+  }
+
+  .char {
+    position: relative;
+    bottom: 80px;
+    z-index: 9;
   }
