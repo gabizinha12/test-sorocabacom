@@ -79,30 +79,30 @@ body {
 }
 
 .card2 {
-   width: 370px;
-   background-color: #fff;
-   border-radius: 99px;
-   box-shadow: 0px 3px 6px #C82D2D5C;
-   margin-right: 10px;
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 20px;
-  }
+  width: 370px;
+  background-color: #fff;
+  border-radius: 99px;
+  box-shadow: 0px 3px 6px #c82d2d5c;
+  margin-right: 10px;
+}
 
-  .desc {
-      text-align: center;
-      align-items: center;
-      margin-bottom: 20px;
-  }
+/* Add some padding inside the card container */
+.container {
+  padding: 20px;
+}
 
-  .char {
-    position: relative;
-    bottom: 80px;
-    z-index: 9;
-  }
- 
+.desc {
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.char {
+  position: relative;
+  bottom: 80px;
+  z-index: 9;
+}
+
 /* Float four columns side by side */
 .column {
   float: left;
@@ -112,7 +112,9 @@ body {
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -138,57 +140,56 @@ body {
   }
 }
 
-.pena{
+.pena1 {
   position: absolute;
-  right: 55vw;
-  top: 19vw;
+  right: 63vw;
+  top: 24vw;
   width: 80px;
 }
 
-.pena2{
+.pena2 {
   position: absolute;
   right: 55vw;
+  left: 53vw;
   top: 23vw;
   width: 50px;
 }
 
-.pena3{
+.pena3 {
   position: absolute;
-  right: 36vw;
-  top: 21vw;
+  right: 32vw;
+  top: 29vw;
+  /* left: 34vw; */
   width: 90px;
 }
 
-.pena4{
-  position: absolute;
-right: 37vw;
-  top: 15vw;
-  width: 110px;
-}
-
 .section {
-  background: rgb(125,237,226);
-    background: linear-gradient(90deg, rgba(125,237,226,1) 0%, rgba(88,183,144,1) 100%);
-    padding: 5vw;
-    text-align: -webkit-center;
-    height: 590px;
+  background: rgb(125, 237, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(125, 237, 226, 1) 0%,
+    rgba(88, 183, 144, 1) 100%
+  );
+  padding: 5vw;
+  text-align: -webkit-center;
+  height: 900px;
 }
 
-svg{
+svg {
   position: absolute;
   width: 80px;
-  transition: .5s;
+  transition: 0.5s;
   fill: white;
   z-index: 99;
 }
 
-svg:hover{
-  transition: .5s;
-  fill: #2AC496;
+svg:hover {
+  transition: 0.5s;
+  fill: #2ac496;
   cursor: pointer;
 }
 
-.left{
+.left {
   left: 0;
 }
 
@@ -200,5 +201,108 @@ svg:hover{
   left: 50%;
   transform: translate(600px, 300px);
   display: block;
+}
+
+.bg-dark {
+  background-color: #363636;
+  height: 200px;
+}
+.totop {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  padding: 20px;
+  font-size: 50px;
+  color: black;
+  background: white;
+  border-radius: 50vw;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.totop:hover {
+  cursor: pointer;
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.mouse {
+  position: absolute;
+  bottom: 0;
+  width: 80px;
+  height: 80px;
+}
+.bgForm {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  z-index: 100;
+}
+.green {
+  color: #63c7a9;
+}
+
+
+.descript{
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+  padding: 50px 0;
+  text-align: left;
+  letter-spacing: 0px;
+  font-family: sans-serif;
+}
+
+form{
+  padding: 19px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+input, textarea{
+  padding: 1vw;
+  z-index: 99;
+}
+
+textarea{
+  margin-top: 10px;
+}
+.btn{
+  padding: .5vw 3.5vw;
+  font-size: 18px;
+  border: rgba(88,183,144,1) solid 1px;
+  background-color: rgba(88,183,144,1);
+  color: white;
+  font-family: "Open sans", sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+@media (min-width: 1401px){
+  .section{
+      height: 44vw;
+  }
+  .pena{
+      right: 66vw;
+      top: 32vw;
+      width: 180px;
+  }
+  .pena2{
+      right: 63vw;
+      top: 39vw;
+      width: 180px;
+  }
+  .pena3{
+      right: 26vw;
+      top: 38vw;
+      width: 10vw;
+  }
+ 
 }
 
